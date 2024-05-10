@@ -1,23 +1,18 @@
-.projects {
-  padding-left: 2rem;
-}
+
 
 .project {
-  display: flex;
-  justify-content: flex-end;
-  margin: 2rem 0;
-  padding-right: 2rem;
+
+  margin: 1rem 3rem 3rem 0;
+
 }
 
 .project-num {
+  font-family: var(--ft-newbrug);
   font-size: 2rem;
-  margin-right: 0.5rem;
   font-weight: 400;
   color: var(--accent);
-}
+  margin-bottom: 0.5rem;
 
-.project-desc {
-  padding-top: 0.9rem;
 }
 
 .project-title {
@@ -29,13 +24,12 @@
 
 .project-img {
   max-width: 100%;
-  margin: 2rem 0 1rem;
+  margin: 1.5rem 0 ;
   filter: grayscale(1);
-  border-radius: 5px;
 }
 
-.subtitle {
-  padding-top: 1rem;
+.project-subtitle {
+  padding-top: 0.5rem;
   font-family: var(--ft-newbrug);
   font-weight: 600;
 }
@@ -47,7 +41,6 @@
 .project-link {
   text-decoration: none;
   color: var(--charcoal);
-  font-size: 0.7rem;
 }
 
 .project-link:hover {
@@ -56,11 +49,7 @@
   cursor: pointer;
 }
 
-@media only screen and (min-width: 768px) {
-
-  .projects {
-    padding-left: 10rem;
-  }
+@media only screen and (min-width: 1008px) {
 
   .project {
     width: 60%;

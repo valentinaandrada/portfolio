@@ -1,5 +1,5 @@
 .about {
-  padding: 3rem 2rem;
+  padding: 3rem 0;
 }
 
 .about-img {
@@ -12,13 +12,10 @@
   line-height: 1rem;
 }
 
-.about-intro_desc {
-    padding-bottom: 1rem;
-}
 
 .intro-p {
     padding: 0.5rem 0;
-    line-height: 1rem;
+    line-height: 1.2rem;
 }
 
 .about-cv {
@@ -30,6 +27,7 @@
 
 .about-stack {
   padding-top: 2rem;
+  padding-right: 3rem;
 }
 
 .about-stack_list {
@@ -38,19 +36,31 @@
   list-style: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1008px) {
   .about {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: auto auto; 
+    gap: 2rem;
+    margin-right: 4rem;
+
+  }
+  
+  .about-stack {
+    grid-column: 2;
+    padding: 0;
+    max-width: 90%;
   }
 
-  .about-img {
-    max-width: inherit;
-  }
+    .about-img {
+      max-width: 100%;
+      align-self: end;
+      justify-self: end;
+    }
 
-  .about-intro {
-    width: 50%;
-    padding: 2rem 3rem 0;
-  }
+    .about-intro {
+      align-self: end;
+    }
+  
+
 }

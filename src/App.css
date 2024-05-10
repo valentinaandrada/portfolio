@@ -33,8 +33,7 @@ button {
 }
 
 .container {
-  width: calc(100%-60px);
-  margin-left: 60px;
+  margin-left: 70px;
 }
 
 .title {
@@ -42,7 +41,7 @@ button {
   font-weight: 600;
   font-optical-sizing: auto;
   font-style: normal;
-  padding-bottom: 0.5rem;
+  padding: 1rem 0;
 }
 
 .line {
@@ -61,10 +60,10 @@ button {
 
 @media only screen and (min-width: 1080px) {
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .container {
-    padding-left: 80px;
+    margin-left: 120px;
   }
 }

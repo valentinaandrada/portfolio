@@ -1,5 +1,5 @@
 .contact {
-  padding: 2rem 0;
+  margin-bottom: 3rem;
 }
 
 .contact-title {
@@ -9,10 +9,15 @@
 
 .contact-info {
   width: 70%;
+  padding-top: 1rem;
+}
+
+.contact-list {
   margin-top: 1rem;
 }
 
 .contact-item {
+  font-size: 0.9rem;
   margin: 2rem 1rem 0 0;
   font-family: var(--ft-newbrug);
   color: var(--charcoal);
@@ -43,15 +48,14 @@
     color: var(--accent);
   }
 
-@media only screen and (min-width: 768px) {
-  .contact {
+  @media only screen and (min-width: 1008px) {
+    .contact {
     display: flex;
   }
 
   .contact-title {
     font-size: 6rem;
     line-height: 5rem;
-    padding: 0 1rem 0 5rem;
   }
 
   .contact-info {
