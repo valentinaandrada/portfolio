@@ -1,0 +1,56 @@
+.about {
+  padding: 3rem 2rem;
+}
+
+.about-img {
+  max-width: 80%;
+}
+
+.about-intro {
+  max-width: 80%;
+  padding-top: 2rem;
+  line-height: 1rem;
+}
+
+.about-intro_desc {
+    padding-bottom: 1rem;
+}
+
+.intro-p {
+    padding: 0.5rem 0;
+    line-height: 1rem;
+}
+
+.about-cv {
+    font-family: var(--ft-newbrug);
+  text-decoration: none;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.about-stack {
+  padding-top: 2rem;
+}
+
+.about-stack_list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .about-img {
+    max-width: inherit;
+  }
+
+  .about-intro {
+    width: 50%;
+    padding: 2rem 3rem 0;
+  }
+}

@@ -1,0 +1,70 @@
+:root {
+  /* colors */
+  --charcoal: #1a1818;
+  --offwhite: #ece7e1;
+  --nude: #f1d5bf;
+  --white: white;
+  --black: black;
+  --accent: orangered;
+  /* fonts */
+  --ft-newbrug: "NEW BRUG", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--offwhite);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.container {
+  width: calc(100%-60px);
+  margin-left: 60px;
+}
+
+.title {
+  font-family: "NEW BRUG", sans-serif;
+  font-weight: 600;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding-bottom: 0.5rem;
+}
+
+.line {
+  height: 1px;
+  max-width: 100%;
+  background-color: var(--charcoal);
+}
+
+.rounded-box {
+  font-family: var(--ft-newbrug);
+  padding: 5px 10px;
+  margin: 0.5rem 0.5rem 0 0;
+  border-radius: 50px;
+  border: 1px solid var(--charcoal);
+}
+
+@media only screen and (min-width: 1080px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding-left: 80px;
+  }
+}
