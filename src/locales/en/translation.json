@@ -42,16 +42,21 @@
     "sentences": [
       "Architect turned ",
       "front-end developer ",
-      "passionate about crafting modern, user-friendly digital experiences. Specialized in ",
-      ", I blend design expertise with coding precision.",
-      "Based in Barcelona, open to global opportunities."
-    ]
+      "passionate about crafting modern, intuitive, and user-friendly digital experiences. Specialized in ",
+      ", I  bring together a keen eye for design and technical precision to create responsive, user-centered interfaces.",
+      "Based in Barcelona and open to global opportunities, I am eager to collaborate on projects that transform ideas into impactful digital solutions.",
+      "Explore my "
+    ],
+    "links": {
+      "portfolio": "portfolio"
+    }
   },
   "about": {
     "paragraphs": [
       "Self-taught frontend developer based in Barcelona, although my journey started far from code. I've been working several years as an architect, turning concepts into reality through design and 3D modeling. In 2021, I discovered web development and was drawn to the opportunity to create interactive digital experiences.",
       "After two years of dedicated learning and practice, I took on my first project as a frontend developer this year. Specializing in React, I focused on building responsive, user-friendly interfaces that required both technical precision and creative problem-solving. The transition from designing physical spaces to digital ones has been an exciting challenge, allowing me to combine my creative design skills with technical problem-solving in new and rewarding ways.",
       "I’m always looking for new challenges and opportunities to grow, keep learning, and collaborate on building thoughtful, impactful digital products that make a difference."
-    ]
+    ],
+    "resume-path": ""
   }
 }
