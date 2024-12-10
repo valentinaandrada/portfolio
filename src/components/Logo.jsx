@@ -7,7 +7,7 @@ const Logo = () => {
 
   return (
     <div className="text-end">
-      <Link to="/" className="block">
+      <Link to="/portfolio" className="block">
         {/* Name */}
         <h1 className="sm:text-2xl font-light tracking-wide dark:text-darkSecondary">
           <span className="font-medium tracking-wide">VALENTINA</span> ANDRADA

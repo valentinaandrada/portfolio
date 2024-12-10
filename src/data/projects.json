@@ -19,9 +19,8 @@
       "es": "Diseño web, desarrollo web"
     },
     "tech": "React, TailwindCSS, FramerMotion",
-    "image": "/images/travel.png",
-    "demoLink": "https://example.com/demo-travel",
-    "repoLink": "https://github.com/user/travel-repo"
+    "demoLink": "https://valentinaandrada.github.io/portfolio/",
+    "repoLink": "https://github.com/valentinaandrada/portfolio.git"
   },
   {
     "id": 2,
@@ -43,7 +42,7 @@
       "es": "Diseño web, desarrollo web"
     },
     "tech": "React | Material-UI | FramerMotion",
-    "image": "/src/assets/questionsgame-mockup.png",
+    "image": "/portfolio/questionsgame-mockup.png",
     "demoLink": "https://intimategame.netlify.app/",
     "repoLink": "https://github.com/valentinaandrada/questionsgame"
   },
@@ -67,7 +66,7 @@
       "es": "Diseño web, desarrollo web"
     },
     "tech": "HTML | CSS | Bootstrap | React JS | Firebase",
-    "image": "/src/assets/lambdastore-mockup.png",
+    "image": "/portfolio/lambdastore-mockup.png",
     "demoLink": "https://lambdastore.netlify.app/",
     "repoLink": "https://github.com/valentinaandrada/lambdastore"
   },
@@ -91,7 +90,7 @@
       "es": "Diseño web, desarrollo web"
     },
     "tech": "HTML5 | CSS3 | JavaScript | API Integration",
-    "image": "/src/assets/budgetapp-mockup.png",
+    "image": "/portfolio/budgetapp-mockup.png",
     "demoLink": "https://valentinaandrada.github.io/budgetapp/",
     "repoLink": "https://github.com/valentinaandrada/budgetapp"
   },
@@ -115,7 +114,7 @@
       "es": "Diseño web, desarrollo web"
     },
     "tech": "HTML | CSS | Bootstrap",
-    "image": "/src/assets/pranna-mockup.png",
+    "image": "/portfolio/pranna-mockup.png",
     "demoLink": "https://valentinaandrada.github.io/pranna.es/",
     "repoLink": "https://github.com/valentinaandrada/pranna.es"
   },
@@ -139,7 +138,7 @@
       "es": "Diseño web, desarrollo front-end, integración de APIs back-end"
     },
     "tech": "React | Redux | MUI | Axios",
-    "image": "/src/assets/bookingwebsite-mockup.png"
+    "image": "/portfolio/bookingwebsite-mockup.png"
   },
   {
     "id": 6,
@@ -160,8 +159,6 @@
       "en": "Web design, front-end development, back-end APIs integration",
       "es": "Diseño web, desarrollo front-end, integración de APIs back-end"
     },
-
-    "tech": "React | Redux | MUI | Axios",
-    "image": "/src/assets/pranna-mockup.png"
+    "tech": "React | Redux | MUI | Axios"
   }
 ]

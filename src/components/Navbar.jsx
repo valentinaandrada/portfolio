@@ -82,7 +82,7 @@ const Navbar = () => {
           <ul className={`space-y-4 ${isOpen ? "block" : "hidden"}`}>
           <li>
               <NavLink
-                to="/"
+                to="/portfolio"
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
                   `text-xl tracking-wide ${
@@ -97,7 +97,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="/about"
+                to="/portfolio/about"
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
                   `text-xl tracking-wide ${
@@ -112,7 +112,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="/projects"
+                to="/portfolio/projects"
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
                   `text-xl tracking-wide ${
@@ -127,7 +127,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="/contact"
+                to="/portfolio/contact"
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
                   `text-xl tracking-wide ${

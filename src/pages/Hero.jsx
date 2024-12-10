@@ -24,7 +24,7 @@ const Hero = () => {
               {t("hero.sentences.5")}</p>
               
               <Link
-                to="/projects"
+                to="/portfolio/projects"
                 className="font-medium underline hover:text-accent dark:hover:text-darkAccent"
               >
                 {t("hero.links.portfolio")}

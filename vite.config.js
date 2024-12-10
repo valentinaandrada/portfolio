@@ -7,5 +7,5 @@ export default defineConfig({
   css: {
     postcss: './postcss.config.js'
   },
-  base: 'https://github.com/valentinaandrada/portfolio',
+  base: '/portfolio/',
 })
