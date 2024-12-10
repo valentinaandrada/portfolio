@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "status": "completed",
+    "title": {
+      "en": "portfolio",
+      "es": "portafolio"
+    },
+    "subtitle": {
+      "en": "Personal portfolio website built in React",
+      "es": "Sitio web de portafolio personal creado en React"
+    },
+    "description": {
+      "en": "Personal project to showcase my skills in React, responsive design, and modern web development practices. Built with TailwindCSS and Framer Motion, it emphasizes clean, intuitive navigation and engaging animations. The portfolio is designed to reflect my unique approach to blending technical expertise with design principles, creating a visually appealing and user-friendly experience.",
+      "es": "Proyecto personal para mostrar mis habilidades en React, diseño responsivo y prácticas modernas de desarrollo web. Creado con TailwindCSS y Framer Motion, se enfoca en una navegación limpia, intuitiva y animaciones atractivas. El portafolio refleja mi enfoque único al combinar la experiencia técnica con los principios de diseño, creando una experiencia visualmente atractiva y fácil de usar."
+    },
+    "scope": {
+      "en": "Web design, web development",
+      "es": "Diseño web, desarrollo web"
+    },
+    "tech": "React, TailwindCSS, FramerMotion",
+    "image": "/images/travel.png",
+    "demoLink": "https://example.com/demo-travel",
+    "repoLink": "https://github.com/user/travel-repo"
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "questions game",
+      "es": "juego de preguntas"
+    },
+    "status": "completed",
+    "subtitle": {
+      "en": "Simple web app game built in React",
+      "es": "Juego web simple creado en React"
+    },
+    "description": {
+      "en": "Interactive web app designed to enhance connection and communication between people through fun and engaging questions. Built using React and styled with CSS, the app features a clean and responsive design.",
+      "es": "Aplicación web interactiva diseñada para mejorar la conexión y la comunicación entre personas a través de preguntas divertidas y atractivas. Creada con React y diseñada con CSS, la aplicación presenta un diseño limpio y responsivo."
+    },
+    "scope": {
+      "en": "Web design, web development",
+      "es": "Diseño web, desarrollo web"
+    },
+    "tech": "React | Material-UI | FramerMotion",
+    "image": "/src/assets/questionsgame-mockup.png",
+    "demoLink": "https://intimategame.netlify.app/",
+    "repoLink": "https://github.com/valentinaandrada/questionsgame"
+  },
+  {
+    "id": 3,
+    "status": "completed",
+    "title": {
+      "en": "lambda store",
+      "es": "lambda store"
+    },
+    "subtitle": {
+      "en": "E-commerce website for clothing brand built in React",
+      "es": "Sitio web de comercio electrónico para marca de ropa creado en React"
+    },
+    "description": {
+      "en": "E-commerce web application designed to deliver a smooth and efficient online shopping experience, enabling users to browse products, view details, manage their cart, and complete purchases. Built using React, the application features a clean, responsive design and intuitive navigation. Firebase is integrated as the database, enabling real-time data management for product inventory, and order processing. ",
+      "es": "Aplicación web de comercio electrónico diseñada para ofrecer una experiencia de compra en línea fluida y eficiente, permitiendo a los usuarios navegar por productos, ver detalles, gestionar su carrito y completar sus compras."
+    },
+    "scope": {
+      "en": "Web design, web development",
+      "es": "Diseño web, desarrollo web"
+    },
+    "tech": "HTML | CSS | Bootstrap | React JS | Firebase",
+    "image": "/src/assets/lambdastore-mockup.png",
+    "demoLink": "https://lambdastore.netlify.app/",
+    "repoLink": "https://github.com/valentinaandrada/lambdastore"
+  },
+  {
+    "id": 4,
+    "status": "completed",
+    "title": {
+      "en": "budget app",
+      "es": "burget app"
+    },
+    "subtitle": {
+      "en": "A budget management web app built to help users track expenses in JavaScript",
+      "es": "Aplicación web de gestión de presupuesto en JavaScript"
+    },
+    "description": {
+      "en": "The Budget App is a web application designed to help users manage their finances by tracking incomes and expenses. The developed project features a clean and responsive design, intuitive user interactions, and seamless functionality, ensuring compatibility across devices for an optimal user experience.",
+      "es": "Aplicación web diseñada para ayudar a los usuarios a gestionar sus finanzas rastreando ingresos y gastos."
+    },
+    "scope": {
+      "en": "Web design, web development",
+      "es": "Diseño web, desarrollo web"
+    },
+    "tech": "HTML5 | CSS3 | JavaScript | API Integration",
+    "image": "/src/assets/budgetapp-mockup.png",
+    "demoLink": "https://valentinaandrada.github.io/budgetapp/",
+    "repoLink": "https://github.com/valentinaandrada/budgetapp"
+  },
+  {
+    "id": 5,
+    "status": "completed",
+    "title": {
+      "en": "Pranna.es",
+      "es": "Pranna.es"
+    },
+    "subtitle": {
+      "en": "Static website with HTML, CSS and Bootstrap",
+      "es": "Sitio web estático con HTML, CSS y Bootstrap"
+    },
+    "description": {
+      "en": "Website designed and developed for Pranna, a vegan food company based in Barcelona, to establish a modern, user-friendly online presence. The project aimed to ensure accessibility and seamless compatibility across devices. I prioritized a clean, visually engaging design with intuitive navigation and responsive layouts, all while optimizing performance for a smooth user experience.",
+      "es": "Sitio web diseñado y desarrollado para Pranna, una empresa de alimentos veganos con sede en Barcelona."
+    },
+    "scope": {
+      "en": "Web design, web development",
+      "es": "Diseño web, desarrollo web"
+    },
+    "tech": "HTML | CSS | Bootstrap",
+    "image": "/src/assets/pranna-mockup.png",
+    "demoLink": "https://valentinaandrada.github.io/pranna.es/",
+    "repoLink": "https://github.com/valentinaandrada/pranna.es"
+  },
+  {
+    "id": 6,
+    "status": "working-on",
+    "title": {
+      "en": "booking website",
+      "es": "sitio de reserva de propiedades"
+    },
+    "subtitle": {
+      "en": "Property rental website built in React",
+      "es": "Sitio web de alquiler de propiedades creado en React"
+    },
+    "description": {
+      "en": "Website for a travel agency designed to help users search, explore, and book rental properties in Argentina, with seamless integration of property details, availability, and booking functionalities. The project focuses on delivering a smooth user experience with intuitive navigation and responsive design. The booking process is optimized to guide users from search to checkout, with real-time data integration for availability and pricing.",
+      "es": "Sitio web para una agencia de viajes diseñado para ayudar a los usuarios a buscar, explorar y reservar propiedades en Argentina."
+    },
+    "scope": {
+      "en": "Web design, front-end development, back-end APIs integration",
+      "es": "Diseño web, desarrollo front-end, integración de APIs back-end"
+    },
+    "tech": "React | Redux | MUI | Axios",
+    "image": "/src/assets/bookingwebsite-mockup.png"
+  },
+  {
+    "id": 6,
+    "status": "working-on",
+    "title": {
+      "en": "property management panel",
+      "es": "panel de gestión de propiedades"
+    },
+    "subtitle": {
+      "en": "Property management software built in React",
+      "es": "Software de gestión de propiedades creado en React"
+    },
+    "description": {
+      "en": "Management software designed to streamline the handling of properties, clients, and reservations. It includes features like property and client management, booking visualization. A modular, reusable component structure ensures maintainability and scalability.",
+      "es": "Software de gestión diseñado para simplificar la administración de propiedades, clientes y reservas."
+    },
+    "scope": {
+      "en": "Web design, front-end development, back-end APIs integration",
+      "es": "Diseño web, desarrollo front-end, integración de APIs back-end"
+    },
+
+    "tech": "React | Redux | MUI | Axios",
+    "image": "/src/assets/pranna-mockup.png"
+  }
+]

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h2 {
+  @apply text-xl tracking-wide text-accent dark:text-darkAccent;
+}
+
+.h3 {
+  @apply text-xl font-medium tracking-normal text-secondary dark:text-darkSecondary
+}
+
+.h6 {
+  @apply text-sm font-medium tracking-wide dark:text-darkSecondary
+}
+
+.p {
+  @apply text-sm leading-6 md:leading-7 tracking-tight text-neutral-500 dark:text-neutral-300;
+}
+
+
+.link {
+  @apply text-sm dark:text-darkSecondary hover:text-accent dark:hover:text-darkAccent hover:font-medium
+}
