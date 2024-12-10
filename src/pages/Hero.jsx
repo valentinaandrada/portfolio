@@ -19,13 +19,13 @@ const Hero = () => {
             {t("hero.sentences.3")}
           </p>
           <p>{t("hero.sentences.4")}</p>
-          <div className="text-base flex items-center justify-end gap-1">
-            <p>
+          <div className=" flex items-center justify-end gap-1">
+            <p className="tracking-normal">
               {t("hero.sentences.5")}</p>
               
               <Link
                 to="/portfolio/projects"
-                className="font-medium underline hover:text-accent dark:hover:text-darkAccent"
+                className="font-medium tracking-normal underline hover:text-accent dark:hover:text-darkAccent"
               >
                 {t("hero.links.portfolio")}
               </Link>

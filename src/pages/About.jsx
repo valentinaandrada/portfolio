@@ -97,6 +97,8 @@ const About = () => {
           {/* Resume Download Link */}
           <a
             href={t('about.resume-path')}
+            target="_blank" 
+  rel="noopener noreferrer"
             className="lg:absolute right-60 top-8 text-accent dark:text-darkAccent -rotate-90 transform origin-right text-sm md:tracking-wide hover:font-medium"
           >
             {t('buttons.download-resume')}
