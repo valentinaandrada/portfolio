@@ -11,13 +11,15 @@
   "headings": {
     "about-me": "SOBRE MÍ",
     "stack": "TECNOLOGÍAS",
-    "certifications": "CERTIFICACIONES",
+    "certifications": "CERTIFICADOS",
     "projects": "PROYECTOS",
     "wip-projects": "trabajando en...",
     "contact": "CONTACTO"
   },
   "buttons": {
-    "download-resume": "descargar mi currículum"
+    "download-resume": "descargar mi currículum",
+     "collapse": "colapsar bio",
+    "expand": "expandir bio"
   },
   "form": {
     "fields": {

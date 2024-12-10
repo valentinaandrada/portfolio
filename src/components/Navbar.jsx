@@ -6,13 +6,15 @@ import useCloseOnClickOrEsc from "../hooks/useCloseOnClickOrEsc";
 import LanguageSwitcher from "./LanguageSwitcher";
 import ModeSwitcher from "./ModeSwitcher";
 import CloseButton from "./CloseButton";
+import useIsMobile from "../hooks/useIsMobile";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false);
+  const isMobile = useIsMobile();
+  const navRef = useRef(null);
   const { t } = useTranslation();
 
-  const navRef = useRef(null);
   useCloseOnClickOrEsc(navRef, () => setIsOpen(false));
 
   useEffect(() => {
@@ -23,6 +25,7 @@ const Navbar = () => {
     }
   }, []);
 
+
   // Framer motion variants
   const variants = {
     open: {
@@ -31,7 +34,7 @@ const Navbar = () => {
       transition: { duration: 0.5 },
     },
     closed: {
-      width: "60px",
+      width: isMobile ? "40px" : "60px",
       transition: { duration: 0.5 },
     },
   };

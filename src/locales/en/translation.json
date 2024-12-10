@@ -17,7 +17,9 @@
     "contact": "CONTACT"
   },
   "buttons": {
-    "download-resume": "download my resume"
+    "download-resume": "download my resume",
+    "collapse": "collapse bio",
+    "expand": "expand bio"
   },
   "form": {
     "fields": {
