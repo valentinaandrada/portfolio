@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -9,10 +9,19 @@ import CloseButton from "./CloseButton";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const { t } = useTranslation();
 
   const navRef = useRef(null);
   useCloseOnClickOrEsc(navRef, () => setIsOpen(false));
+
+  useEffect(() => {
+    const firstVisit = localStorage.getItem("navbarFirstVisit");
+    if (!firstVisit) {
+      setHasAnimated(true); 
+      localStorage.setItem("navbarFirstVisit", "true");
+    }
+  }, []);
 
   // Framer motion variants
   const variants = {
@@ -39,6 +48,7 @@ const Navbar = () => {
       <motion.nav
         ref={navRef}
         className="fixed top-0 left-0 h-full bg-white dark:bg-overlay-dark  dark:text-darkSecondary shadow-lg flex flex-col items-center z-20"
+        initial={hasAnimated ? false : "closed"}
         animate={isOpen ? "open" : "closed"}
         variants={variants}
       >
@@ -84,6 +94,7 @@ const Navbar = () => {
               <NavLink
                 to="/portfolio"
                 onClick={() => setIsOpen(false)}
+                end
                 className={({ isActive }) =>
                   `text-xl tracking-wide ${
                     isActive
