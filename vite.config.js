@@ -7,8 +7,5 @@ export default defineConfig({
   css: {
     postcss: './postcss.config.js'
   },
-  server: {
-    port: 3000, 
-    strictPort: true
-  },
+  base: 'https://github.com/valentinaandrada/portfolio',
 })
