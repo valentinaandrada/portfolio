@@ -19,7 +19,7 @@
       "es": "Diseño web, desarrollo web"
     },
     "tech": "React, TailwindCSS, FramerMotion",
-    "demoLink": "https://valentinaandrada.github.io/portfolio/images/",
+    "demoLink": "https://valentinaandrada.com",
     "repoLink": "https://github.com/valentinaandrada/portfolio.git"
   },
   {
@@ -42,7 +42,7 @@
       "es": "Diseño web, desarrollo web"
     },
     "tech": "React | Material-UI | FramerMotion",
-    "image": "/portfolio/images/questionsgame-mockup.png",
+    "image": "/images/questionsgame-mockup.png",
     "demoLink": "https://questionsgame.vercel.app/",
     "repoLink": "https://github.com/valentinaandrada/questionsgame"
   },
@@ -66,7 +66,7 @@
       "es": "Diseño web, desarrollo web"
     },
     "tech": "HTML | CSS | Bootstrap | React JS | Firebase",
-    "image": "/portfolio/images/lambdastore-mockup.png",
+    "image": "/images/lambdastore-mockup.png",
     "demoLink": "https://lambdastore.netlify.app/",
     "repoLink": "https://github.com/valentinaandrada/lambdastore"
   },
@@ -90,7 +90,7 @@
       "es": "Diseño web, desarrollo web"
     },
     "tech": "HTML5 | CSS3 | JavaScript | API Integration",
-    "image": "/portfolio/images/budgetapp-mockup.png",
+    "image": "/images/budgetapp-mockup.png",
     "demoLink": "https://valentinaandrada.github.io/budgetapp/",
     "repoLink": "https://github.com/valentinaandrada/budgetapp"
   },
@@ -114,7 +114,7 @@
       "es": "Diseño web, desarrollo web"
     },
     "tech": "HTML | CSS | Bootstrap",
-    "image": "/portfolio/images/pranna-mockup.png",
+    "image": "/images/pranna-mockup.png",
     "demoLink": "https://valentinaandrada.github.io/pranna.es/",
     "repoLink": "https://github.com/valentinaandrada/pranna.es"
   },
@@ -138,7 +138,7 @@
       "es": "Diseño web, desarrollo front-end, integración de APIs back-end"
     },
     "tech": "React | Redux | MUI | Axios",
-    "image": "/portfolio/images/bookingwebsite-mockup.png"
+    "image": "/images/bookingwebsite-mockup.png"
   },
   {
     "id": 6,

@@ -9,7 +9,7 @@ const Logo = () => {
   return (
     <div className="text-end">
       { isMobile ? (
-      <Link to="/portfolio" className="block">
+      <Link to="/" className="block">
         <h1 className="text-xl font-light tracking-wide dark:text-darkSecondary">
           <span className="font-medium tracking-wide">V</span>ANDRADA
         </h1>
@@ -18,7 +18,7 @@ const Logo = () => {
         </p>
       </Link>
       ) : (
-        <Link to="/portfolio" className="block">
+        <Link to="/" className="block">
         <h1 className="text-2xl font-light tracking-wide dark:text-darkSecondary">
           <span className="font-medium tracking-wide">VALENTINA</span> ANDRADA
         </h1>

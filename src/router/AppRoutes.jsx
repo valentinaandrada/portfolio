@@ -15,14 +15,13 @@ const AppRoutes = () => {
     <AnimatePresence mode="wait">
 
     <Routes location={location} key={location.pathname}>
-      <Route path="/portfolio" element={<Layout />}>
-        {/* Nested Routes */}
+      <Route path="/" element={<Layout />}>
         <Route index element={<Hero/>}/>
-        <Route path="/portfolio/about" element={<About />} />
-        <Route path="/portfolio/projects" element={<Projects />} />
-        <Route path="/portfolio/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Route>
-      {/* Fallback route */}
+     
       <Route path="*" element={<NotFound />} />
     </Routes>
     </AnimatePresence>

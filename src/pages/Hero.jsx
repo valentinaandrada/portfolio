@@ -10,7 +10,7 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={`h-s w-full flex flex-col items-end justify-end ${
+    <div className={`h-full w-full flex flex-col items-end justify-end ${
       isMobile ? "fixed bottom-0 left-0 p-8 pl-20" : ""
     }`}>
       <motion.div {...fadeInUp}>
