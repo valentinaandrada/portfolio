@@ -27,7 +27,7 @@ const Hero = () => {
             <p className="tracking-normal">{t("hero.sentences.5")}</p>
 
             <Link
-              to="/portfolio/projects"
+              to="/projects"
               className="font-medium tracking-normal underline hover:text-accent dark:hover:text-darkAccent"
             >
               {t("hero.links.portfolio")}
