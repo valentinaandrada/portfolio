@@ -92,7 +92,7 @@ const Contact = () => {
 
   return (
     <motion.div {...fadeInUp}>
-      <section className="md:max-h-screen md:flex overflow-hidden ">
+      <section className="min-h-[70vh] md:max-h-screen md:flex overflow-hidden ">
         <div className="flex-1 flex-col justify-center md:mt-[180px] md:pr-16 md:mb-16 overflow-auto scrollbar-hide">
           <h2 className="h2 mb-6">{t('headings.contact')}</h2>
 

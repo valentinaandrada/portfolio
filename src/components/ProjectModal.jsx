@@ -14,7 +14,7 @@ const ProjectModal = ({ project, isOpen, onClose, currentLanguage }) => {
 
   return (
     <div className="fixed inset-0 z-10 flex bg-overlay-light backdrop-blur-sm overflow-hidden">
-      {/* Animated Modal */}
+      
       <motion.div
         ref={modalRef}
         className="bg-white dark:bg-darkPrimary pl-24 p-8 shadow-lg w-[70vh] h-full flex flex-col"
@@ -24,7 +24,7 @@ const ProjectModal = ({ project, isOpen, onClose, currentLanguage }) => {
         exit="exit"
         transition={modalTransition}
       >
-        {/* Close Button */}
+       
         <CloseButton onClick={onClose} />
 
         {/* Project Content */}

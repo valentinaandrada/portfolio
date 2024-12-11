@@ -1,19 +1,13 @@
-import { useLocation } from "react-router-dom";
 
 const Footer = () => {
-  const location = useLocation();
 
-  const footerColor =
-    location.pathname === "/" ? "text-secondary" : "text-primary";
-
-    const footerBackground =
-    location.pathname === '/' ? 'bg-inherit' : 'bg-secondary'
     
   return (
-    <div className={`px-12 py-8 z-10 ${footerBackground} `}>
-      <p className={`text-sm uppercase tracking-[.2em] ${footerColor}`}>
-        Valentina Andrada
+    <div className="md:absolute bottom-0 right-12 flex items-center justify-end gap-1 text-xs pb-8">
+      <p className="tracking-tight text-neutral-500">
+        designed & developed by
       </p>
+      <a href="https://github.com/valentinaandrada" className="text-accent dark:text-darkAccent hover:underline">@valentinaandrada</a>
     </div>
   );
 };

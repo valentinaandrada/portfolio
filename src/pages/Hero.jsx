@@ -10,11 +10,11 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={`h-full w-full flex flex-col items-end justify-end ${
-      isMobile ? "fixed bottom-0 left-0 p-8 pl-20 z-10" : ""
+    <div className={`h-s w-full flex flex-col items-end justify-end ${
+      isMobile ? "fixed bottom-0 left-0 p-8 pl-20" : ""
     }`}>
       <motion.div {...fadeInUp}>
-        <div className=" p text-end md:mb-20 md:mr-20 md:w-[300px] space-y-4">
+        <div className=" p text-end md:mb-20 md:mr-12 md:w-[300px] space-y-4">
           <p>
             {t("hero.sentences.0")}
             <span className="font-bold text-sm">{t("hero.sentences.1")}</span>
@@ -23,7 +23,7 @@ const Hero = () => {
             {t("hero.sentences.3")}
           </p>
           <p>{t("hero.sentences.4")}</p>
-          <div className=" flex items-center justify-end gap-1">
+          <div className=" flex items-center justify-end gap-2">
             <p className="tracking-normal">{t("hero.sentences.5")}</p>
 
             <Link
@@ -35,6 +35,7 @@ const Hero = () => {
             <FaArrowRight />
           </div>
         </div>
+
       </motion.div>
     </div>
   );

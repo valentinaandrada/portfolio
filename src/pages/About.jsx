@@ -1,12 +1,12 @@
+import { useState } from "react";
 import { motion } from "motion/react";
-import { fadeInUp } from "../utils/motionConfig";
-import CertificationCard from "../components/CertficationCard";
-import SkillsList from "../components/SkillsList";
-import photo from "../assets/VA-photo.jpeg";
 import { useTranslation } from "react-i18next";
-import useIsMobile from "../hooks/useIsMobile";
-import { useRef, useState } from "react";
+import { fadeInUp } from "../utils/motionConfig";
 import { PiCaretDown, PiCaretUp } from "react-icons/pi";
+import useIsMobile from "../hooks/useIsMobile";
+import SkillsList from "../components/SkillsList";
+import CertificationCard from "../components/CertficationCard";
+import photo from "../assets/VA-photo.jpeg";
 
 const certifications = [
   {

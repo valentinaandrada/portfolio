@@ -1,9 +1,11 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Logo from "../components/Logo";
+import Footer from "../components/Footer";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 const Layout = () => {
-
+  useScrollToTop();
 
   return (
     <div className="flex min-h-screen bg-primary dark:bg-darkPrimary">
@@ -12,9 +14,10 @@ const Layout = () => {
         <aside className=" md:h-full flex items-center justify-end md:justify-center my-20 md:m-0 md:ml-40">
           <Logo />
         </aside>
-        <div className="flex-1 ml-16"> 
+        <div className="flex-1 ml-16">
           <Outlet />
         </div>
+        <Footer />
       </main>
     </div>
   );
