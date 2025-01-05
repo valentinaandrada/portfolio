@@ -6,7 +6,7 @@
     "contact": "CONTACT"
   },
   "logo": {
-    "subtitle": "front-end dev"
+    "subtitle": "front-end | UI dev"
   },
   "headings": {
     "about-me": "ABOUT ME",
@@ -43,23 +43,26 @@
   "hero": {
     "sentences": [
       "Architect turned ",
-      "front-end developer ",
+      "front-end | UI developer ",
       "passionate about crafting modern, intuitive, and user-friendly digital experiences. Specialized in ",
-      ", I  bring together a keen eye for design and technical precision to create responsive, user-centered interfaces.",
-      "Based in Barcelona and open to global opportunities, I am eager to collaborate on projects that transform ideas into impactful digital solutions.",
-      " "
+      ", I enjoy combining my background in design with my technical skills to create responsive, visually appealing and user-centered interfaces.",
+      "Based in Barcelona."
     ],
     "links": {
-      "portfolio": "projects"
+      "portfolio": "View my work",
+      "resume": "Download my resume"
     }
   },
   "about": {
     "paragraphs": [
-      "Self-taught frontend developer based in Barcelona, although my journey started far from code. I've been working several years as an architect, turning concepts into reality through design and 3D modeling. In 2021, I discovered web development and was drawn to the opportunity to create interactive digital experiences.",
-      "After two years of dedicated learning and practice, I took on my first project as a frontend developer this year. Specializing in React, I focused on building responsive, user-friendly interfaces that required both technical precision and creative problem-solving. The transition from designing physical spaces to digital ones has been an exciting challenge, allowing me to combine my creative design skills with technical problem-solving in new and rewarding ways.",
-      "I’m always looking for new challenges and opportunities to grow, keep learning, and collaborate on building thoughtful, impactful digital products that make a difference."
+      "Hi! I am a self-taught frontend developer based in Barcelona, although my journey started far from code... As an architect, I worked for several years turning concepts into reality through design and 3D modeling. In 2021, I discovered web development and was drawn to the possibility to blend my background in design with the precision of code to create interactive digital experiences.",
+      "After two years of learning and hands-on practice, I took on my first project as a frontend developer this year. Specialized in React, I focus on building responsive, user-friendly interfaces that required both technical precision and creative problem-solving. Transitioning from architecture to web development has been an exciting challenge for me, allowing me to explore new and rewarding ways to apply my creative and technical problem-solving skills."
     ],
     "resume-path": "https://drive.google.com/file/d/1mCq9S6xLKe-GSRg0V4QGY3rbot9x3wVy/view?usp=sharing"
+  },
+  "projects": {
+    "wip-message": "These projects are currently under development, code and demo will not be available until its launch.",
+    "wip-project-message": "Code cannot be shared at this stage to maintain project confidentiality."
   },
   "not-found": {
     "text": "Sorry, page not found.",

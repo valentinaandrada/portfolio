@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 import { fadeInUp } from "../utils/motionConfig";
@@ -6,11 +6,16 @@ import { PiCaretDown, PiCaretUp } from "react-icons/pi";
 import useIsMobile from "../hooks/useIsMobile";
 import SkillsList from "../components/SkillsList";
 import CertificationCard from "../components/CertficationCard";
-import photo from "../assets/VA-photo.jpeg";
+import photo from "../assets/VA-photo.webp";
+import ScrollIndicator from "../components/ScrollIndicator";
+import useScrollDetection from "../hooks/useScrollDetection";
 
 const certifications = [
   {
-    year: "2022 - 2023",
+    year: {
+      en: "2022 - 2023",
+      es: "2022 - 2023"
+    },
     title: {
       en: "FRONT-END WEB DEVELOPMENT COURSE",
       es: "CURSO DE DESARROLLO WEB FRONT-END",
@@ -21,7 +26,10 @@ const certifications = [
     },
   },
   {
-    year: "2021 - 2022",
+    year: {
+      en: "2021 - 2022",
+      es: "2021 - 2022"
+    },
     title: {
       en: "FULL STACK WEB DEVELOPMENT",
       es: "DESARROLLO WEB FULL STACK",
@@ -32,7 +40,10 @@ const certifications = [
     },
   },
   {
-    year: "March 2021",
+    year: {
+      en: "March 2021",
+      es: 'Marzo 2021'
+    },
     title: {
       en: "SANTANDER TECH Prework",
       es: "Prework de SANTANDER TECH",
@@ -43,7 +54,10 @@ const certifications = [
     },
   },
   {
-    year: "2013 - 2017",
+    year: {
+      en: "2013 - 2017",
+      es: "2013 - 2017"
+    },
     title: {
       en: "ARCHITECTURE",
       es: "ARQUITECTURA",
@@ -56,8 +70,11 @@ const certifications = [
 ];
 
 const About = () => {
+  const scrollableRef = useRef(null)
   const isMobile = useIsMobile();
   const [isExpanded, setIsExpanded] = useState(false);
+  const { isAtTop, isAtBottom } = useScrollDetection(scrollableRef, 20);
+
 
   const { i18n, t } = useTranslation();
   const currentLanguage = i18n.language;
@@ -69,8 +86,8 @@ const About = () => {
   return (
     <motion.div {...fadeInUp}>
       <section className="lg:max-h-screen lg:flex overflow-hidden gap-16 ">
-        <div className="flex-1 flex-col justify-center md:mt-[180px] md:mb-16 overflow-auto scrollbar-hide">
-          {/* About */}
+        <div ref={scrollableRef} className="flex-1 flex-col justify-center md:mt-[180px] md:mb-16 overflow-auto scrollbar-hide">
+
           <h2 className=" h2 mb-8 md:mb-12">{t("headings.about-me")}</h2>
           {isMobile ? (
             <div>
@@ -100,7 +117,6 @@ const About = () => {
             <div className="flex flex-col gap-4 ">
               <p className="p">{t("about.paragraphs.0")}</p>
               <p className="p">{t("about.paragraphs.1")}</p>
-              <p className="p">{t("about.paragraphs.2")}</p>
             </div>
           )}
 
@@ -118,6 +134,11 @@ const About = () => {
             />
           ))}
         </div>
+          { !isMobile && 
+          <div className="absolute bottom-12">
+            <ScrollIndicator isAtTop={isAtTop} isAtBottom={isAtBottom} />
+          </div>
+          }
 
         {/* Image Section */}
         <div className=" md:flex justify-end my-10 md:my-20">
@@ -136,6 +157,8 @@ const About = () => {
             {t("buttons.download-resume")}
           </a>
         </div>
+
+
       </section>
     </motion.div>
   );

@@ -24,7 +24,7 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['"Manrope"', 'sans-serif'],
+        sans: ['Manrope', 'sans-serif'],
       },
       fontSize: {
         base: ['16px', '24px'], 

@@ -3,53 +3,6 @@
     "id": 1,
     "status": "completed",
     "title": {
-      "en": "portfolio",
-      "es": "portafolio"
-    },
-    "subtitle": {
-      "en": "Personal portfolio website built in React",
-      "es": "Sitio web de portafolio personal creado en React"
-    },
-    "description": {
-      "en": "Personal project to showcase my skills in React, responsive design, and modern web development practices. Built with TailwindCSS and Framer Motion, it emphasizes clean, intuitive navigation and engaging animations. The portfolio is designed to reflect my unique approach to blending technical expertise with design principles, creating a visually appealing and user-friendly experience.",
-      "es": "Proyecto personal para mostrar mis habilidades en React, diseño responsivo y prácticas modernas de desarrollo web. Creado con TailwindCSS y Framer Motion, se enfoca en una navegación limpia, intuitiva y animaciones atractivas. El portafolio refleja mi enfoque único al combinar la experiencia técnica con los principios de diseño, creando una experiencia visualmente atractiva y fácil de usar."
-    },
-    "scope": {
-      "en": "Web design, web development",
-      "es": "Diseño web, desarrollo web"
-    },
-    "tech": "React, TailwindCSS, FramerMotion",
-    "demoLink": "https://valentinaandrada.com",
-    "repoLink": "https://github.com/valentinaandrada/portfolio.git"
-  },
-  {
-    "id": 2,
-    "title": {
-      "en": "questions game",
-      "es": "juego de preguntas"
-    },
-    "status": "completed",
-    "subtitle": {
-      "en": "Simple web app game built in React",
-      "es": "Juego web simple creado en React"
-    },
-    "description": {
-      "en": "Interactive web app designed to enhance connection and communication between people through fun and engaging questions. Built using React and styled with CSS, the app features a clean and responsive design.",
-      "es": "Aplicación web interactiva diseñada para mejorar la conexión y la comunicación entre personas a través de preguntas divertidas y atractivas. Creada con React y diseñada con CSS, la aplicación presenta un diseño limpio y responsivo."
-    },
-    "scope": {
-      "en": "Web design, web development",
-      "es": "Diseño web, desarrollo web"
-    },
-    "tech": "React | Material-UI | FramerMotion",
-    "image": "/images/questionsgame-mockup.png",
-    "demoLink": "https://questionsgame.vercel.app/",
-    "repoLink": "https://github.com/valentinaandrada/questionsgame"
-  },
-  {
-    "id": 3,
-    "status": "completed",
-    "title": {
       "en": "lambda store",
       "es": "lambda store"
     },
@@ -57,91 +10,261 @@
       "en": "E-commerce website for clothing brand built in React",
       "es": "Sitio web de comercio electrónico para marca de ropa creado en React"
     },
-    "description": {
-      "en": "E-commerce web application designed to deliver a smooth and efficient online shopping experience, enabling users to browse products, view details, manage their cart, and complete purchases. Built using React, the application features a clean, responsive design and intuitive navigation. Firebase is integrated as the database, enabling real-time data management for product inventory, and order processing. ",
-      "es": "Aplicación web de comercio electrónico diseñada para ofrecer una experiencia de compra en línea fluida y eficiente, permitiendo a los usuarios navegar por productos, ver detalles, gestionar su carrito y completar sus compras."
+    "project": {
+      "en": {
+        "description": "E-commerce web application designed to deliver a smooth and efficient online shopping experience, enabling users to browse products, view details, manage their cart, and complete purchases. Built using React, the application features a clean, responsive design and intuitive navigation. Firebase is integrated as the database, enabling real-time data management for product inventory, and order processing.",
+        "overview": {
+          "goal": "Develop a responsive e-commerce application for a seamless shopping experience.",
+          "scope": "Web design, web development."
+        },
+        "tech": ["HTML", "CSS", "Bootstrap", "React JS", "Firebase"],
+        "features": [
+          {
+            "title": "Real-Time Inventory Management",
+            "desc": "Integrated Firebase for real-time product inventory updates."
+          },
+          {
+            "title": "Responsive Design",
+            "desc": "Ensures usability across different devices and screen sizes."
+          },
+          {
+            "title": "Intuitive Navigation",
+            "desc": "Clean and simple navigation to enhance the user experience."
+          }
+        ]
+      },
+      "es": {
+        "description": "Aplicación web de comercio electrónico diseñada para ofrecer una experiencia de compra en línea fluida y eficiente, permitiendo a los usuarios navegar por productos, ver detalles, gestionar su carrito y completar sus compras.",
+        "overview": {
+          "goal": "Desarrollar una aplicación de comercio electrónico responsiva para una experiencia de compra fluida.",
+          "scope": "Diseño web, desarrollo web."
+        },
+        "tech": ["HTML", "CSS", "Bootstrap", "React JS", "Firebase"],
+        "features": [
+          {
+            "title": "Gestión de Inventario en Tiempo Real",
+            "desc": "Integración con Firebase para actualizaciones en tiempo real del inventario de productos."
+          },
+          {
+            "title": "Diseño Responsivo",
+            "desc": "Garantiza la usabilidad en diferentes dispositivos y tamaños de pantalla."
+          },
+          {
+            "title": "Navegación Intuitiva",
+            "desc": "Navegación simple y limpia para mejorar la experiencia del usuario."
+          }
+        ]
+      }
     },
-    "scope": {
-      "en": "Web design, web development",
-      "es": "Diseño web, desarrollo web"
-    },
-    "tech": "HTML | CSS | Bootstrap | React JS | Firebase",
-    "image": "/images/lambdastore-mockup.png",
+    "images": ["/images/lambdastore-mockup.png"],
     "demoLink": "https://lambdastore.netlify.app/",
     "repoLink": "https://github.com/valentinaandrada/lambdastore"
   },
   {
-    "id": 4,
+    "id": 2,
     "status": "completed",
     "title": {
       "en": "budget app",
-      "es": "burget app"
+      "es": "budget app"
     },
     "subtitle": {
-      "en": "A budget management web app built to help users track expenses in JavaScript",
+      "en": "A simple, intuitive tool to track expenses and manage budgets effectively using JavaScript",
       "es": "Aplicación web de gestión de presupuesto en JavaScript"
     },
-    "description": {
-      "en": "The Budget App is a web application designed to help users manage their finances by tracking incomes and expenses. The developed project features a clean and responsive design, intuitive user interactions, and seamless functionality, ensuring compatibility across devices for an optimal user experience.",
-      "es": "Aplicación web diseñada para ayudar a los usuarios a gestionar sus finanzas rastreando ingresos y gastos."
+    "project": {
+      "en": {
+        "description": "A responsive web app for tracking expenses and managing budgets, built with a focus on clean code and efficient front-end functionality.",
+        "overview": {
+          "goal": "Create a responsive web app that simplifies budget management by allowing users to track and visualize their expenses.",
+          "scope": "Web design, front-end development."
+        },
+        "tech": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "LocalStorage",
+          "Chart.js",
+          "API Integration"
+        ],
+        "features": [
+          {
+            "title": "Dynamic Expense Management",
+            "desc": "Users can add, categorize, and delete expenses dynamically. Expenses are displayed in real-time, updating the budget summary immediately."
+          },
+          {
+            "title": "CRUD Operations",
+            "desc": "Allows users to CREATE new expenses, READ and view them in categorized lists, UPDATE existing entries, and DELETE expenses, with all changes reflected dynamically in real-time."
+          },
+          {
+            "title": "Data Persistence",
+            "desc": "Leveraged Local Storage to retain user data between sessions without requiring a backend."
+          },
+          {
+            "title": "Real-Time Currency Conversion",
+            "desc": "Integrated a currency exchange API to allow users to convert their balance into their preferred currency in real time."
+        }
+        ]
+      },
+      "es": {
+        "description": "Aplicación web diseñada para ayudar a los usuarios a gestionar sus finanzas rastreando ingresos y gastos.",
+        "overview": {
+          "goal": "Crear una aplicación web completamente responsiva que permita a los usuarios agregar, categorizar y visualizar gastos de forma dinámica.",
+          "scope": "Diseño web, desarrollo front-end"
+        },
+        "tech": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "LocalStorage",
+          "Chart.js",
+          "API Integration"
+        ],
+        "features": [
+          {
+            "title": "Gestión Dinámica de Gastos",
+            "desc": "Los usuarios pueden agregar, categorizar y eliminar gastos dinámicamente, con actualizaciones en tiempo real."
+          },
+          {
+            "title": "Operaciones CRUD",
+            "desc": "Permite crear, leer, actualizar y eliminar gastos con cambios reflejados en tiempo real."
+          },
+          {
+            "title": "Persistencia de Datos",
+            "desc": "Uso de Local Storage para guardar datos de los usuarios entre sesiones sin necesidad de un backend."
+          },
+          {
+            "title": "Conversión de Divisa",
+            "desc": "Integración de una API de tipo de cambio para convertir balance a la moneda preferida por el usuario en tiempo real."
+        }
+        ]
+      }
     },
-    "scope": {
-      "en": "Web design, web development",
-      "es": "Diseño web, desarrollo web"
-    },
-    "tech": "HTML5 | CSS3 | JavaScript | API Integration",
-    "image": "/images/budgetapp-mockup.png",
+    "images": ["/images/budgetapp-mockup.png", "/images/budgetapp-preview.gif"],
     "demoLink": "https://valentinaandrada.github.io/budgetapp/",
-    "repoLink": "https://github.com/valentinaandrada/budgetapp"
+    "repoLink": "https://github.com/valentinaandrada/budgetapp/"
   },
   {
-    "id": 5,
+    "id": 3,
     "status": "completed",
     "title": {
-      "en": "Pranna.es",
-      "es": "Pranna.es"
+      "en": "pranna.es",
+      "es": "pranna.es"
     },
     "subtitle": {
       "en": "Static website with HTML, CSS and Bootstrap",
       "es": "Sitio web estático con HTML, CSS y Bootstrap"
     },
-    "description": {
-      "en": "Website designed and developed for Pranna, a vegan food company based in Barcelona, to establish a modern, user-friendly online presence. The project aimed to ensure accessibility and seamless compatibility across devices. I prioritized a clean, visually engaging design with intuitive navigation and responsive layouts, all while optimizing performance for a smooth user experience.",
-      "es": "Sitio web diseñado y desarrollado para Pranna, una empresa de alimentos veganos con sede en Barcelona."
+    "project": {
+      "en": {
+        "description": "Website designed and developed for Pranna, a vegan food company based in Barcelona, to establish a modern, user-friendly online presence. The project aimed to ensure accessibility and seamless compatibility across devices. I prioritized a clean, visually engaging design with intuitive navigation and responsive layouts.",
+        "overview": {
+          "goal": "Design and develop a modern, responsive website to enhance Pranna's online presence.",
+          "scope": "Web design, web development."
+        },
+        "tech": ["HTML", "CSS", "Bootstrap"],
+        "features": [
+          {
+            "title": "Responsive Design",
+            "desc": "Ensures seamless compatibility across devices, from desktop to mobile."
+          },
+          {
+            "title": "User-Friendly Navigation",
+            "desc": "Provides an intuitive structure for users to easily explore Pranna's offerings."
+          },
+          {
+            "title": "Optimized Performance",
+            "desc": "Enhances load times and ensures a smooth browsing experience for users."
+          }
+        ]
+      },
+      "es": {
+        "description": "Sitio web diseñado y desarrollado para Pranna, una empresa de alimentos veganos con sede en Barcelona, para establecer una presencia moderna online. El proyecto se centró en garantizar la accesibilidad y la compatibilidad responsiva entre dispositivos.",
+        "overview": {
+          "goal": "Diseñar y desarrollar un sitio web moderno y responsivo para mejorar la presencia online de Pranna.",
+          "scope": "Diseño web, desarrollo web."
+        },
+        "tech": ["HTML", "CSS", "Bootstrap"],
+        "features": [
+          {
+            "title": "Diseño Responsivo",
+            "desc": "Garantiza compatibilidad fluida entre dispositivos, desde escritorio hasta móvil."
+          },
+          {
+            "title": "Navegación intuitiva",
+            "desc": "Proporciona una estructura intuitiva para que los usuarios exploren fácilmente las ofertas de Pranna."
+          }
+        ]
+      }
     },
-    "scope": {
-      "en": "Web design, web development",
-      "es": "Diseño web, desarrollo web"
-    },
-    "tech": "HTML | CSS | Bootstrap",
-    "image": "/images/pranna-mockup.png",
+    "images": ["/images/pranna-mockup.png"],
     "demoLink": "https://valentinaandrada.github.io/pranna.es/",
     "repoLink": "https://github.com/valentinaandrada/pranna.es"
   },
   {
-    "id": 6,
+    "id": 4,
     "status": "working-on",
     "title": {
       "en": "booking website",
-      "es": "sitio de reserva de propiedades"
+      "es": "sitio web de alquiler"
     },
     "subtitle": {
       "en": "Property rental website built in React",
-      "es": "Sitio web de alquiler de propiedades creado en React"
+      "es": "Sitio web de alquiler temporal de propiedades creado en React"
     },
-    "description": {
-      "en": "Website for a travel agency designed to help users search, explore, and book rental properties in Argentina, with seamless integration of property details, availability, and booking functionalities. The project focuses on delivering a smooth user experience with intuitive navigation and responsive design. The booking process is optimized to guide users from search to checkout, with real-time data integration for availability and pricing.",
-      "es": "Sitio web para una agencia de viajes diseñado para ayudar a los usuarios a buscar, explorar y reservar propiedades en Argentina."
+    "project": {
+      "en": {
+        "description": "Property rental website designed to help users search, explore, and book rental properties in Argentina. The website integrates detailed property listings, real-time availability, and a seamless booking experience, providing users with an intuitive and efficient interface.",
+        "overview": {
+          "goal": "Develop a modern, responsive property rental platform that combines property details, real-time availability, and streamlined booking capabilities.",
+          "scope": "Web design, front-end development, API integration"
+        },
+        "tech": ["React", "Redux", "MUI", "Axios", "Framer Motion", "API Integration"],
+        "features": [
+          {
+            "title": "Property Search and Booking",
+            "desc": "Allows users to search for properties, view availability, and book seamlessly."
+          },
+          {
+            "title": "Real-Time Booking System",
+            "desc": "Integrates APIs to provide up-to-date property availability and pricing for a seamless booking experience."
+          },
+          {
+            "title": "Responsive and Accessible Design",
+            "desc": "Optimized for all devices, ensuring usability and accessibility for all users."
+          },
+          {
+            "title": "Enhanced User Experience",
+            "desc": "Incorporates smooth navigation, transitions, and intuitive layouts for an engaging experience."
+          }
+        ]
+      },
+      "es": {
+        "description": "Sitio web para una agencia de viajes diseñado para ayudar a los usuarios a buscar, explorar y reservar propiedades en Argentina, con integración perfecta de detalles de propiedades, disponibilidad y funcionalidades de reserva. El proyecto se centra en ofrecer una experiencia de usuario fluida con navegación intuitiva y diseño responsivo. El proceso de reserva está optimizado para guiar a los usuarios desde la búsqueda hasta el pago, con integración de datos en tiempo real para disponibilidad y precios.",
+        "overview": {
+          "goal": "Crear un sitio web responsivo para alquiler de propiedades que integre detalles de propiedades, disponibilidad y funcionalidades de reserva fluida.",
+          "scope": "Diseño web, desarrollo front-end, integración de APIs back-end."
+        },
+        "tech": ["React", "Redux", "MUI", "Axios", "Framer Motion", "Integración API"],
+        "features": [
+          {
+            "title": "Búsqueda y Reserva de Propiedades",
+            "desc": "Permite a los usuarios buscar propiedades, ver disponibilidad y reservar sin problemas."
+          },
+          {
+            "title": "Integración de Datos en Tiempo Real",
+            "desc": "Integra APIs para detalles de propiedades, precios y disponibilidad en tiempo real."
+          },
+          {
+            "title": "Diseño Responsivo",
+            "desc": "Garantiza compatibilidad en todos los dispositivos para una experiencia de usuario fluida."
+          }
+        ]
+      }
     },
-    "scope": {
-      "en": "Web design, front-end development, back-end APIs integration",
-      "es": "Diseño web, desarrollo front-end, integración de APIs back-end"
-    },
-    "tech": "React | Redux | MUI | Axios",
-    "image": "/images/bookingwebsite-mockup.png"
+    "images": ["/images/bookingwebsite-mockup.png"]
   },
   {
-    "id": 6,
+    "id": 5,
     "status": "working-on",
     "title": {
       "en": "property management panel",
@@ -151,14 +274,52 @@
       "en": "Property management software built in React",
       "es": "Software de gestión de propiedades creado en React"
     },
-    "description": {
-      "en": "Management software designed to streamline the handling of properties, clients, and reservations. It includes features like property and client management, booking visualization. A modular, reusable component structure ensures maintainability and scalability.",
-      "es": "Software de gestión diseñado para simplificar la administración de propiedades, clientes y reservas."
+    "project": {
+      "en": {
+        "description": "Management software designed to streamline the handling of properties, clients, and reservations. It includes features like property and client management, booking visualization. A modular, reusable component structure ensures maintainability and scalability.",
+        "overview": {
+          "goal": "Create a scalable property management panel to simplify property, client, and booking management.",
+          "scope": "Web design, front-end development, back-end APIs integration."
+        },
+        "tech": ["React", "Redux", "MUI", "Axios"],
+        "features": [
+          {
+            "title": "Property Management",
+            "desc": "Easily add, update, and delete property details with real-time updates."
+          },
+          {
+            "title": "Client Management",
+            "desc": "Track client information and assign clients to properties seamlessly."
+          },
+          {
+            "title": "Booking Visualization",
+            "desc": "View and manage property bookings, ensuring up-to-date availability."
+          }
+        ]
+      },
+      "es": {
+        "description": "Software de gestión de propiedades, clientes y reservas. Incluye funciones como gestión de propiedades y clientes, y visualización de reservas. Una estructura modular y reutilizable de componentes garantiza la escalabilidad y mantenibilidad del sistema.",
+        "overview": {
+          "goal": "Crear un panel de gestión de propiedades escalable para simplificar la administración de propiedades, clientes y reservas.",
+          "scope": "Diseño web, desarrollo front-end, integración de APIs back-end."
+        },
+        "tech": ["React", "Redux", "MUI", "Axios"],
+        "features": [
+          {
+            "title": "Gestión de Propiedades",
+            "desc": "Permite agregar, actualizar y eliminar detalles de propiedades con actualizaciones en tiempo real."
+          },
+          {
+            "title": "Gestión de Clientes",
+            "desc": "Rastrea la información de los clientes y los asigna fácilmente a propiedades."
+          },
+          {
+            "title": "Visualización de Reservas",
+            "desc": "Permite ver y gestionar las reservas de propiedades, asegurando disponibilidad actualizada."
+          }
+        ]
+      }
     },
-    "scope": {
-      "en": "Web design, front-end development, back-end APIs integration",
-      "es": "Diseño web, desarrollo front-end, integración de APIs back-end"
-    },
-    "tech": "React | Redux | MUI | Axios"
+    "images": ["/images/propertymanagement-mockup.png"]
   }
 ]

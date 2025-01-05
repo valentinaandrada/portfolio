@@ -1,25 +1,23 @@
-import { motion } from "motion/react";
 import { useState } from "react";
-import { CiMail } from "react-icons/ci";
-import { SlSocialLinkedin } from "react-icons/sl";
-import { VscGithubAlt } from "react-icons/vsc";
-import { fadeInUp } from "../utils/motionConfig";
-import emailjs from "emailjs-com";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react";
+import { fadeInUp } from "../utils/motionConfig";
+import { CiMail } from "react-icons/ci";
+import { VscGithubAlt } from "react-icons/vsc";
+import { SlSocialLinkedin } from "react-icons/sl";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
-
-  const {t} = useTranslation();
-
+  const { t } = useTranslation();
+  const [errors, setErrors] = useState({});
+  const [formStatus, setFormStatus] = useState("");
+  const [showPopup, setShowPopup] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  const [errors, setErrors] = useState({});
-  const [formStatus, setFormStatus] = useState("");
-  const [showPopup, setShowPopup] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -38,7 +36,7 @@ const Contact = () => {
     const newErrors = {};
 
     if (!formData.name.trim()) {
-      newErrors.name = t('form.validation.nameRequired');
+      newErrors.name = t("form.validation.nameRequired");
     }
 
     if (!formData.email.trim()) {
@@ -54,7 +52,7 @@ const Contact = () => {
     }
 
     setErrors(newErrors);
-    return Object.keys(newErrors).length === 0; 
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = (e) => {
@@ -68,8 +66,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID, 
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, 
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -86,7 +84,7 @@ const Contact = () => {
         setTimeout(() => setShowPopup(false), 6000);
       });
 
-    setFormData({ name: "", email: "", message: "" }); 
+    setFormData({ name: "", email: "", message: "" });
     setErrors({});
   };
 
@@ -94,17 +92,18 @@ const Contact = () => {
     <motion.div {...fadeInUp}>
       <section className="min-h-[70vh] md:max-h-screen md:flex overflow-hidden ">
         <div className="flex-1 flex-col justify-center md:mt-[180px] md:pr-16 md:mb-16 overflow-auto scrollbar-hide">
-          <h2 className="h2 mb-6">{t('headings.contact')}</h2>
+          <h2 className="h2 mb-6">{t("headings.contact")}</h2>
 
           {/* Contact Form */}
-          <form className="w-full max-w-md space-y-4" onSubmit={handleSubmit}>
-            <div>
+          <form className="w-full max-w-md space-y-4" onSubmit={handleSubmit} noValidate>
+            <div>          
               <input
                 type="text"
                 name="name"
+                label='name'
                 value={formData.name}
                 onChange={handleChange}
-                placeholder={t('form.fields.name')}
+                placeholder={t("form.fields.name")}
                 className="w-full focus:outline-none p-2 text-sm tracking-normal dark:bg-darkSecondary/10"
               />
               {errors.name && (
@@ -117,9 +116,10 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
+                label='email'
                 value={formData.email}
                 onChange={handleChange}
-                placeholder={t('form.fields.email')}
+                placeholder={t("form.fields.email")}
                 className="w-full focus:outline-none p-2 text-sm tracking-normal dark:bg-darkSecondary/10"
               />
               {errors.email && (
@@ -131,9 +131,10 @@ const Contact = () => {
             <div>
               <textarea
                 name="message"
+                label='message'
                 value={formData.message}
                 onChange={handleChange}
-                placeholder={t('form.fields.message')}
+                placeholder={t("form.fields.message")}
                 className="w-full focus:outline-none p-2 text-sm tracking-normal dark:bg-darkSecondary/10"
                 rows="5"
               />
@@ -147,9 +148,10 @@ const Contact = () => {
             <div className="flex justify-end items-center">
               <button
                 type="submit"
-                className="text-accent dark:text-darkAccent font-medium tracking-wide hover:font-semibold"
+                className="text-accent dark:text-darkAccent font-medium tracking-wide hover:font-bold uppercase"
+                aria-label="Send form"
               >
-                {t('form.buttons.send')}
+                {t("form.buttons.send")}
               </button>
             </div>
           </form>

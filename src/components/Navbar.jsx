@@ -9,10 +9,10 @@ import CloseButton from "./CloseButton";
 import useIsMobile from "../hooks/useIsMobile";
 
 const Navbar = () => {
+  const navRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false);
   const isMobile = useIsMobile();
-  const navRef = useRef(null);
   const { t } = useTranslation();
 
   useCloseOnClickOrEsc(navRef, () => setIsOpen(false));
@@ -20,11 +20,10 @@ const Navbar = () => {
   useEffect(() => {
     const firstVisit = localStorage.getItem("navbarFirstVisit");
     if (!firstVisit) {
-      setHasAnimated(true); 
+      setHasAnimated(true);
       localStorage.setItem("navbarFirstVisit", "true");
     }
   }, []);
-
 
   // Framer motion variants
   const variants = {
@@ -54,6 +53,7 @@ const Navbar = () => {
         initial={hasAnimated ? false : "closed"}
         animate={isOpen ? "open" : "closed"}
         variants={variants}
+        aria-expanded={isOpen}
       >
         {/* Toggle Button */}
         <button
@@ -63,24 +63,35 @@ const Navbar = () => {
               : "inset-0 flex justify-center items-center"
           } focus:outline-none`}
           onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? (
-            <CloseButton/>
+            <CloseButton />
           ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6"
+            <motion.div
+              initial={{ scale: 1 }}
+              animate={{ scale: 1.5 }}
+              transition={{
+                repeat: 3,
+                repeatType: "reverse",
+                duration: 1,
+              }}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
-              />
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
+                />
+              </svg>
+            </motion.div>
           )}
         </button>
 
@@ -92,8 +103,11 @@ const Navbar = () => {
           </div>
 
           {/* Navigation Links */}
-          <ul className={`space-y-4 ${isOpen ? "block" : "hidden"}`}>
-          <li>
+          <ul
+            className={`space-y-4 ${isOpen ? "block" : "hidden"}`}
+            role="menu"
+          >
+            <li role="menuitem">
               <NavLink
                 to=""
                 onClick={() => setIsOpen(false)}
@@ -109,7 +123,7 @@ const Navbar = () => {
                 {t("nav.home")}
               </NavLink>
             </li>
-            <li>
+            <li role="menuitem">
               <NavLink
                 to="/about"
                 onClick={() => setIsOpen(false)}
@@ -124,7 +138,7 @@ const Navbar = () => {
                 {t("nav.about")}
               </NavLink>
             </li>
-            <li>
+            <li role="menuitem">
               <NavLink
                 to="/projects"
                 onClick={() => setIsOpen(false)}
@@ -139,7 +153,7 @@ const Navbar = () => {
                 {t("nav.projects")}
               </NavLink>
             </li>
-            <li>
+            <li role="menuitem">
               <NavLink
                 to="/contact"
                 onClick={() => setIsOpen(false)}
@@ -172,7 +186,6 @@ const Navbar = () => {
               className="tracking-normal font-light hover:font-medium"
               aria-label="GitHub"
             >
-
               github
             </a>
             <a
@@ -182,20 +195,6 @@ const Navbar = () => {
               className="tracking-normal font-light hover:font-medium"
               aria-label="LinkedIn"
             >
-              {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
-              />
-            </svg> */}
               linkedin
             </a>
           </div>

@@ -1,20 +1,19 @@
 import { motion } from "motion/react";
-import { fadeInUp } from "../utils/motionConfig";
-import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import { fadeInUp } from "../utils/motionConfig";
 import useIsMobile from "../hooks/useIsMobile";
 
 const Hero = () => {
-  const isMobile = useIsMobile();
   const { t } = useTranslation();
 
   return (
-    <div className={`h-full w-full flex flex-col items-end justify-end ${
-      isMobile ? "fixed bottom-0 left-0 p-8 pl-20" : ""
-    }`}>
-      <motion.div {...fadeInUp}>
-        <div className=" p text-end md:mb-20 md:mr-12 md:w-[300px] space-y-4">
+    <motion.div
+      {...fadeInUp}
+      className="h-full flex flex-col justify-end items-end md:mr-12 pb-20"
+    >
+      <div className="max-w-[320px] space-y-8 mt-24">
+        <div className="p text-end">
           <p>
             {t("hero.sentences.0")}
             <span className="font-bold text-sm">{t("hero.sentences.1")}</span>
@@ -23,21 +22,28 @@ const Hero = () => {
             {t("hero.sentences.3")}
           </p>
           <p>{t("hero.sentences.4")}</p>
-          <div className=" flex items-center justify-end gap-2">
-            <p className="tracking-normal">{t("hero.sentences.5")}</p>
-
-            <Link
-              to="/projects"
-              className="font-medium tracking-normal underline hover:text-accent dark:hover:text-darkAccent"
-            >
-              {t("hero.links.portfolio")}
-            </Link>
-            <FaArrowRight />
-          </div>
         </div>
+        <div className="flex flex-col justify-end gap-4 items-end">
+          <Link
+            to="/projects"
+            className="font-medium tracking-normal uppercase hover:font-semibold  text-accent dark:text-darkAccent"
+            aria-label="View work"
+          >
+            {t("hero.links.portfolio")}
+          </Link>
 
-      </motion.div>
-    </div>
+          <Link
+            to={t("about.resume-path")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium tracking-normal uppercase hover:font-semibold  text-accent dark:text-darkAccent"
+            aria-label="Download resume"
+          >
+            {t("buttons.download-resume")}
+          </Link>
+        </div>
+      </div>
+    </motion.div>
   );
 };
 
